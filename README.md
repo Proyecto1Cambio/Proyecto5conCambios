@@ -1,2 +1,2 @@
-# Proyecto5conCambios
-Cambios que realiza el grupo 1
+# GRUPO5
+Oliris, Erika, Nuria y Celia
