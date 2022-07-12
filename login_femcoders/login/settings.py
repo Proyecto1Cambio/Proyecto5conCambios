@@ -81,9 +81,9 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'Femcoders',
         'CLIENT': {
-            'host' : 'mongodb+srv://chantell:213456@grupo1.zsyvx2k.mongodb.net/?retryWrites=true&w=majority',
-            'username':'chantell',
-            'password': '213456',
+            'host' : 'mongodb+srv://emily:xEBH6hpMC5Jd2EkT@grupo1.zsyvx2k.mongodb.net/?retryWrites=true&w=majority',
+            'username':'emily',
+            'password': 'xEBH6hpMC5Jd2EkT',
             'port': 27017,
         }
     }
