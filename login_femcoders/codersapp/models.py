@@ -36,9 +36,9 @@ class Alumno(models.Model):
 
 
 class Evaluacion(models.Model):
-    materia = models.ForeignKey(Materia,on_delete=models.SET_NULL, null=True)
+    materia = models.ForeignKey(Materia, on_delete=models.SET_NULL, null=True)
     alumno = models.ForeignKey(Alumno, on_delete=models.SET_NULL, null=True)
-    nota = models.FloatField(null=True, blank=True)
+    nota = models.FloatField(null=True, blank=True, max_length=25)
     comentario = models.TextField(max_length=100)
 
     def __str__(self):

@@ -5,25 +5,8 @@
 
 
 <h1>Evaluación</h1>
-
-{% for e in evaluacion %}
-<li>
-        {{e.nombre}}
-        {% for a in evaalumn %}
-        {% if e.alumno.id == a.id %}
-        {{a.nombre}}
-        <a href="perfilAlumno/{{a.id}}">Perfil</a>
-        {% endif %}
-        {% endfor %}
-        {{e.nota}}
-        <a href="{% url 'ponernota' e.id %}">Editar</a>
-        <a href="{% url 'eliminar' e.id %}">Borrar</a>
-        {{e.comentario}}
-        {% endfor %}
-</li>
-
-     <a href="{% url 'nuevaevaluacion' %}">
-    <button>Añadir Evaluación</button>
+<a href="{% url 'nuevaevaluacion' %}">
+    <button class="buttonblue">Añadir Evaluación</button>
      </a>
 
 <div class="tabla">
@@ -31,25 +14,29 @@
         <thead>
             <tr>
                 <th>Nombre</th>
-                <th>Teléfono</th>
-                <th>Email</th>
+                <th>Detalles</th>
+                <th>Notas</th>
                 <th>Opciones</th>
+                <th>Comentarios</th>
             </tr>
         </thead>
         <tbody>
-        {% for x in alumnos %}
+        {% for e in evaluacion %}
+        {% for a in evaalumn %}
             <tr>
-                <td>{{x.nombre_alumnos}}</td>
-                <td>{{x.telefono_alumnos}}</td>
-                <td>{{x.email_alumnos}}</td>
-                <td><button type="button" class="button">
-            <a href="editar/{{x.id}}">Editar</a>
-        </button>
-                    <button type="button" class="buttonred">
-            <a href="eliminaralumno/{{x.id}}">Eliminar</a>
-        </button>
-                </td>
+                <td>{{a.nombre}}</td>
+                <td><a href="perfilAlumno/{{a.id}}">
+                    <button class="button">Perfil</button>
+                    </a></td>
+                <td>{{e.nota}}</td>
+                <td><a href="{% url 'ponernota' e.id %}">
+                    <button class="button">Editar</button></a>
+                    <a href="{% url 'eliminar' e.id %}">
+                    <button class="buttonred">Eliminar</button>
+                    </a></td>
+                <td>{{e.comentario}}</td>
             </tr>
+        {% endfor %}
         {% endfor %}
         </tbody>
     </table>

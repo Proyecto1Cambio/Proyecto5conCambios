@@ -22,7 +22,7 @@ from codersapp.forms import *
 urlpatterns = [
     #path('', inicio, name='inicio'),
     path('', evaluacion, name='evaluacion'),
-    path('evaluacion/perfilAlumno/<int:id>', perfilAlumno, name='perfilalumno'),
+    path('perfilAlumno/<int:id>', perfilAlumno, name='perfilalumno'),
     path('EditarNota/<int:id>', editevau, name='ponernota'),
     path('evaluacion/<int:id>', eliminarEvau, name='eliminar'),
     path('nuevo_alumno/', nuevoAlumno, name='nuevoal'),

@@ -10,17 +10,10 @@ body{
     align-items: center;
     margin:20px;
     flex-direction: column;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
-footer{
-    position:relative;
-    width: 804px;
-    height: 100px;
-    display: block;
-    padding: 5px;
 
-}
 .contenedorLogin{
 
     width: 804px;
@@ -45,41 +38,164 @@ footer{
 }
 
 .bloqueiconos{
-    display:flex;
-    padding: 30px;
-    /*float:right;*/
-    justify-content: center;
+    margin-top: 30px;
 }
 .content{
     text-align: center;
     display:block;
 }
 
-/*.boton{
-    width: 100px;
-    height: 50px;
-    background: #4311B9;
-    border-radius: 25px;
-    display:block;
-    margin: auto;
-    color: rgba(0, 0, 255, 0.1);
-    font-size: 16px;
-    font-weight: bold
-}*/
-
 .boton {
 text-decoration:none;
 font-weight: 600;
 font-size: 20px;
 color:#fff;
-padding-top:15px;
-padding-bottom:15px;
-padding-left:40px;
-padding-right:40px;
+padding-top:10px;
+padding-bottom:10px;
+padding-left:30px;
+padding-right:30px;
 background-color:#4311B9;
 border-color: #4311B9;
 border-width: 3px;
 border-style: solid;
 border-radius:35px;
-justify-content: space-around;
 }
+
+h1{
+    margin-left: 150px;
+    margin-top: -100px;
+}
+
+.tabla{
+    margin-left: 145px;
+    width: 500px;
+}
+
+
+table{
+    background-color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    width: 100%;
+}
+
+th, td{
+    padding: 5px;
+}
+
+thead{
+    background-color: #fff;
+}
+
+tr:nth-child(odd) td{
+    background-color: #F5F5F5;
+}
+
+.button {
+    background-color: #4311B9;
+    color: #fff;
+    border: solid #4311B9;
+    border-radius: 20px;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+.buttonblue {
+    margin-bottom: 15px;
+    margin-left: -190px;
+    background-color: #4311B9;
+    color: #fff;
+    border: solid #4311B9;
+    border-radius: 20px;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.buttoneditar{
+    margin-top: 50px
+    margin-bottom: 15px;
+    margin-left: -190px;
+    background-color: #4311B9;
+    color: #fff;
+    border: solid #4311B9;
+    border-radius: 20px;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+.button2{
+    margin-top: 50px
+    margin-bottom: 15px;
+    background-color: #4311B9;
+    color: #fff;
+    border: solid #4311B9;
+    border-radius: 20px;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.button3{
+    margin-top: 30px;
+    margin-left: 130px;
+    background-color: #4311B9;
+    color: #fff;
+    border: solid #4311B9;
+    border-radius: 20px;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.buttonred {
+    background-color: #dd2121;
+    color: #fff;
+    border: solid #dd2121;
+    border-radius: 20px;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 130px;
+}
+
+label{
+    margin-left: 10px;
+}
+
+#id_nota{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 55px;
+    font-weight: bold;
+}
+
+#id_comentario{
+    margin-bottom: 33px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nuevo{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: -120px;
+    margin-bottom: -10px;
+    margin-left: 50px;
+}
+

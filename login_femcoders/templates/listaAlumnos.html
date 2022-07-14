@@ -4,18 +4,31 @@
 {% block content %}
 
     <h1>Mis Alumnos</h1>
-    {% for u in Misalumnos %}
-    <ul>
-        <li>
-            {{u.nombre}}
-            {{u.apellido}}
-            {{u.email}}
-            {{u.dni}}
-        </li>
-    </ul>
+
+<div class="tabla">
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Email</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for u in Misalumnos %}
+            <tr>
+                <td>{{u.nombre}}</td>
+                <td>{{u.apellido}}</td>
+                <td>{{u.email}}</td>
+                <td>{{u.dni}}</td>
+            </tr>
         {% endfor %}
-    <a href="{% url 'nuevoal' %}">
-    <button>Añadir alumno</button>
+        <a href="{% url 'nuevoal' %}">
+    <button class="button">Añadir alumno</button>
      </a>
+        </tbody>
+    </table>
+</div>
 
 {% endblock content %}

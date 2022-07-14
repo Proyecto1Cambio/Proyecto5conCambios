@@ -26,7 +26,6 @@ def perfilAlumno(request, id):
     elperfilAlumno= Alumno.objects.get(pk=id)
     return render(request, 'perfilAlumno.html', {'alumno': elperfilAlumno})
 
-
 def editevau(request, id):
     Notaasig = get_object_or_404(Evaluacion, pk=id)
     if request.method == 'POST':
