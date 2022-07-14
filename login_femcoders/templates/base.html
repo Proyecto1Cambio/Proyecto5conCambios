@@ -1,12 +1,15 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
-    <title>base</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E
+    <link rel="preconnect" href="https://fonts.gstatic.com%22 crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap%22 rel="stylesheet">
+    <title>Evaluación</title>
 </head>
 <body>
     <section class="contenedorLogin">
@@ -19,14 +22,13 @@
                 {% endblock content %}
         </div>
     </section>
+    <footer>
+        <div class="bloqueiconos">
+            <button class="boton">Atrás</button>
+            <a href="login.html">
+            <button class="boton">Cerrar sesión</button>
+            </a>
+        </div>
+    </footer>
 </body>
-<footer>
-    <div class="bloqueiconos">
-     <button>atras</button>
-        <a href="login.html">
-     <button>cerrar sesión</button>
-        </a>
-
-    </div>
-</footer>
 </html>

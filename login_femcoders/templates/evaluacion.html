@@ -23,7 +23,36 @@
 </li>
 
      <a href="{% url 'nuevaevaluacion' %}">
-    <button>Añadir Evaluacion</button>
+    <button>Añadir Evaluación</button>
      </a>
+
+<div class="tabla">
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Email</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for x in alumnos %}
+            <tr>
+                <td>{{x.nombre_alumnos}}</td>
+                <td>{{x.telefono_alumnos}}</td>
+                <td>{{x.email_alumnos}}</td>
+                <td><button type="button" class="button">
+            <a href="editar/{{x.id}}">Editar</a>
+        </button>
+                    <button type="button" class="buttonred">
+            <a href="eliminaralumno/{{x.id}}">Eliminar</a>
+        </button>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
 
 {% endblock content %}

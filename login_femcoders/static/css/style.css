@@ -1,10 +1,17 @@
-{% load static %}
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+*{
+    font-family:'Dosis', sans-serif;
+}
+
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     margin:20px;
     flex-direction: column;
+    font-size: 24px;
+    font-weight: bold;
 }
 footer{
     position:relative;
@@ -38,12 +45,41 @@ footer{
 }
 
 .bloqueiconos{
-    display:block;
+    display:flex;
     padding: 30px;
-    float:right;
+    /*float:right;*/
+    justify-content: center;
 }
 .content{
     text-align: center;
     display:block;
 }
 
+/*.boton{
+    width: 100px;
+    height: 50px;
+    background: #4311B9;
+    border-radius: 25px;
+    display:block;
+    margin: auto;
+    color: rgba(0, 0, 255, 0.1);
+    font-size: 16px;
+    font-weight: bold
+}*/
+
+.boton {
+text-decoration:none;
+font-weight: 600;
+font-size: 20px;
+color:#fff;
+padding-top:15px;
+padding-bottom:15px;
+padding-left:40px;
+padding-right:40px;
+background-color:#4311B9;
+border-color: #4311B9;
+border-width: 3px;
+border-style: solid;
+border-radius:35px;
+justify-content: space-around;
+}
