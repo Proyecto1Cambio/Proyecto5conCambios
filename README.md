@@ -1,4 +1,6 @@
-# Proyecto de fork y ampliación de proyecto ajeno para academia
+# Proyecto fork y ampliación de proyecto ajeno para una academia
+
+El objetivo fue mejorar e implementar la aplicación bajo Django
 
 # ¿Qué hemos hecho?
 - Investigación
@@ -19,6 +21,6 @@
 # GRUPO5
 Oliris, Erika, Nuria y Celia 
 
-Desarrolladoras finales:
+# Desarrolladoras finales:
 
-Chantell, Emily, Ang 
+Chantell, Emily, Angélica y Ainara
